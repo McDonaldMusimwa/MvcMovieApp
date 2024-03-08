@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MvcMovie.Data;
 using MvcMovie.Models;
+using static MvcMovie.Models.Movie;
 
 namespace MvcMovie.Controllers
 {
@@ -21,7 +22,7 @@ namespace MvcMovie.Controllers
 
         // GET: Movies
         
-        public async Task<IActionResult> Index(string movieGenre,string searchString)
+        public async Task<IActionResult> Index(string movieGenre,string searchString,string releaseDate)
         {
             if (_context.Movie == null)
             {
@@ -38,9 +39,21 @@ namespace MvcMovie.Controllers
             {
                 movies = movies.Where(s => s.Title!.Contains(searchString));
             }
-            if (!string.IsNullOrEmpty(movieGenre))
+            if (!String.IsNullOrEmpty(movieGenre))
             {
+                
                 movies = movies.Where(x => x.Genre == movieGenre);
+            }
+            if (!String.IsNullOrEmpty(releaseDate))
+            {
+                if (releaseDate == "asc")
+                {
+                    movies = movies.OrderBy(x => x.ReleaseDate);
+                }
+                else if (releaseDate == "desc")
+                {
+                    movies = movies.OrderByDescending(x => x.ReleaseDate);
+                }
             }
 
             var movieGenreVM = new MovieGenreViewModel

@@ -19,36 +19,41 @@ namespace MvcMovie.Models
                 context.Movie.AddRange(
                     new Movie
                     {
-                        Title = "When Harry Met Sally",
-                        ReleaseDate = DateTime.Parse("1989-2-12"),
-                        Genre = "Romantic Comedy",
+                        Title = "Meet the Mormons",
+                        ReleaseDate = DateTime.Parse("2014-2-12"),
+                        Genre = "Family",
                         Price = 7.99M,
-                        Rating = "R"
+                        Rating = "N",
+                        Image = "/images/meet.jpg"
                     },
                     new Movie
                     {
-                        Title = "Ghostbusters ",
-                        ReleaseDate = DateTime.Parse("1984-3-13"),
+                        Title = "The RM",
+                        ReleaseDate = DateTime.Parse("2003-01-31"),
                         Genre = "Comedy",
                         Price = 8.99M,
-                        Rating = "X"
+                        Rating = "N",
+                        Image="/images/therm.jpeg"
                     },
                     new Movie
                     {
-                        Title = "Ghostbusters 2",
-                        ReleaseDate = DateTime.Parse("1986-2-23"),
-                        Genre = "Comedy",
+                        Title = "The Other Side Of Heaven",
+                        ReleaseDate = DateTime.Parse("2001-12-14"),
+                        Genre ="Inspirational",
                         Price = 9.99M,
-                        Rating = "R"
+                        Rating = "N",
+                        Image="/images/theothersideofheaven.jpg"
                     },
-                    new Movie
-                    {
-                        Title = "Rio Bravo",
-                        ReleaseDate = DateTime.Parse("1959-4-15"),
-                        Genre = "Western",
-                        Price = 3.99M,
-                        Rating = "R"
-                    }
+                      new Movie
+                      {
+                          Title = "Johny Lingo",
+                          ReleaseDate = DateTime.Parse("1969-12-14"),
+                          Genre = "Inspirational",
+                          Price = 10.99M,
+                          Rating = "N",
+                          Image = "/images/johny.jpg"
+                      }
+
                 );
                 context.SaveChanges();
             }

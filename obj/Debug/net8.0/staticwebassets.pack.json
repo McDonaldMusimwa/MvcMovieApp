@@ -13,6 +13,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\projects\\dotnetlessons\\MvcMovie\\wwwroot\\images\\film.jpg",
+      "PackagePath": "staticwebassets\\images\\film.jpg"
+    },
+    {
+      "Id": "C:\\projects\\dotnetlessons\\MvcMovie\\wwwroot\\images\\johny.jpg",
+      "PackagePath": "staticwebassets\\images\\johny.jpg"
+    },
+    {
+      "Id": "C:\\projects\\dotnetlessons\\MvcMovie\\wwwroot\\images\\meet.jpg",
+      "PackagePath": "staticwebassets\\images\\meet.jpg"
+    },
+    {
+      "Id": "C:\\projects\\dotnetlessons\\MvcMovie\\wwwroot\\images\\theothersideofheaven.jpg",
+      "PackagePath": "staticwebassets\\images\\theothersideofheaven.jpg"
+    },
+    {
+      "Id": "C:\\projects\\dotnetlessons\\MvcMovie\\wwwroot\\images\\therm.jpeg",
+      "PackagePath": "staticwebassets\\images\\therm.jpeg"
+    },
+    {
       "Id": "C:\\projects\\dotnetlessons\\MvcMovie\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

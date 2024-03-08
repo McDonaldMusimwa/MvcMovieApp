@@ -18,5 +18,21 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: rgb(220, 226, 182);
+}
+nav {
+    background-color: rgb(150, 165, 64);
+}
+thead{
+   
+}
+
+.container{
+    color:black;
+}
+
+.movieImage{
+    width:100px;
+    display:block;
 }

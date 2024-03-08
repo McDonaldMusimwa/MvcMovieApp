@@ -4,6 +4,7 @@ using System.Xml.Linq;
 
 namespace MvcMovie.Controllers
 {
+    /*
     public class MvcMovie : Controller
     {
         //
@@ -21,4 +22,5 @@ namespace MvcMovie.Controllers
             return View();
         }
     }
+    */
 }
